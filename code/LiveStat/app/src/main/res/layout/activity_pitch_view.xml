@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PitchActivity"
+    android:background="@color/darkbackground">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/pitchImg"
+        android:layout_width="314dp"
+        android:layout_height="540dp"
+        android:contentDescription="@string/area_on_pitch"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toStartOf="@+id/guideline31"
+        app:layout_constraintStart_toStartOf="@+id/guideline30"
+        app:layout_constraintTop_toTopOf="@+id/guideline29"
+        app:srcCompat="@drawable/pitch" />
+
+    <Button
+        android:id="@+id/A1ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toTopOf="@+id/pitchImg" />
+
+    <Button
+        android:id="@+id/B1ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/A1ViewBtn" />
+
+    <Button
+        android:id="@+id/C1ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/B1ViewBtn" />
+
+    <Button
+        android:id="@+id/C2ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/B2ViewBtn" />
+
+    <Button
+        android:id="@+id/B2ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/A2ViewBtn" />
+
+    <Button
+        android:id="@+id/A2ViewBtn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toTopOf="@+id/pitchImg" />
+
+    <TextView
+        android:id="@+id/pitchViewTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/forwards"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/A1ViewBtn"
+        app:layout_constraintTop_toTopOf="@+id/A1ViewBtn" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/backs"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/C1ViewBtn"
+        app:layout_constraintStart_toStartOf="@+id/C1ViewBtn" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PitchActivity"
+    android:background="@color/darkbackground">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/pitchImg"
+        android:layout_width="314dp"
+        android:layout_height="540dp"
+        android:contentDescription="@string/area_on_pitch"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toStartOf="@+id/guideline31"
+        app:layout_constraintStart_toStartOf="@+id/guideline30"
+        app:layout_constraintTop_toTopOf="@+id/guideline29"
+        app:srcCompat="@drawable/pitch" />
+
+    <Button
+        android:id="@+id/B1Btn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/A1Btn" />
+
+    <Button
+        android:id="@+id/A1Btn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/C1Btn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/B1Btn" />
+
+    <Button
+        android:id="@+id/A2Btn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/B2Btn"
+        android:layout_width="131dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/A2Btn" />
+
+    <Button
+        android:id="@+id/C2Btn"
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/pitchImg"
+        app:layout_constraintTop_toBottomOf="@+id/B2Btn" />
+
+    <TextView
+        android:id="@+id/pitchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/forwards"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/A1Btn"
+        app:layout_constraintTop_toTopOf="@+id/A1Btn" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <TextView
+        android:id="@+id/pitchTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/backs"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/C1Btn"
+        app:layout_constraintStart_toStartOf="@+id/C1Btn" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/where_did_event_happen"
+        android:textColor="@color/offwhite"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pitchImg"
+        app:layout_constraintEnd_toStartOf="@+id/guideline31"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/guideline30" />
+
+</android.support.constraint.ConstraintLayout>
